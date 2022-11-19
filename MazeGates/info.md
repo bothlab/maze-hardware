@@ -1,6 +1,6 @@
-# **TTL Controllable Gate**
+# TTL Controllable Gate
 
-## **1. Description**
+## 1. Description
 
 The TTL Controllable Gate is designed to open and close a mechanical gate for use in rodent behaviour experiments,
 the gate can be simply operated from any controller that offers a TTL (Transistor-Transistor-Logic) or 3.3V logic output such as a single board computer (Raspberry Pie or Arduino for example)
@@ -15,7 +15,7 @@ The range of movement is set as a minimum and maximum number in the program of t
 
 The PCB has been design to present many of the microchips inputs and ouputs onto pins, with some changes to the program many more servos could be controlled using this design.
 
-## **2. Parts List**
+## 2. Parts List
 
 |Part | Part Description  | Manufacturer | Part ID | Order URL |
 | ---- | ----------------- | ------------ | ------- | --------- |
@@ -30,27 +30,27 @@ The PCB has been design to present many of the microchips inputs and ouputs onto
 | J4 | 90° D15F connector | MH Connectors | 747176-VQ | [Conrad](https://www.conrad.de/de/search.html?search=747176%20-%20VQ) |
 | 2x Screw | Cylinder Screw1.4x5 DIN84 S/Steel | MAYHER | 806469312-VQ | [Conrad](https://www.conrad.de/de/p/din-84-1-4305-m-1-4-x-5-rostfrei-a-1-s-806469312.html) |
 
-![maze gate Schematic](graphics/mazegateschematic.png)
+![maze gate Schematic](graphics/mazegateschematic.png)<br/>
 Schematic of maze gate controller
 
-![maze gate PCB Layout](graphics/mazegatepcb.png)
+![maze gate PCB Layout](graphics/mazegatepcb.png)<br/>
 PCB Layout of maze gate controller
 
-## **3. Functionality**
+## 3. Functionality
 
 All servos use a simple three wire connector containing power (Normally 4.8V to 6V), Ground and a control wire.
 To be able to control the movement of a RC Servo a series of pulses must be sent to the servos control wire normally at a rate of fifty times a second (50Hz)
  although servos will also react to just a few pulses per second if fast reaction time is not of importance,
 the pulses sent to the servo should range from approximately 1mS (Minimum Position) to 2mS (Maximum Position) known as PWM (Pulse Width Modulation),
 some servos have an extended range and can operate outside these limits and some prefer to have a range of 1.1mS to 1.9mS,
-pulses outside of the range of the servos specification will result in the servo not moving at all, this is helpful to know when setting the range of motion.  
+pulses outside of the range of the servos specification will result in the servo not moving at all, this is helpful to know when setting the range of motion.
 
 The schematic comprises of a simple voltage regulation circuit offering 5V for powering the servo and 3.3V for powering the microprocessor,
 a microprocessor which is programmed to output the correct PWM signal to control the servo
  and an LED to show the current state of the servo position as well as blinking when first powered up to indicate readiness for operation.
 
 A header of 6 pins is included for simple direct connection of the Microchip PIC programmer.
-J4 is not required for this application and is only present for future requirements.  
+J4 is not required for this application and is only present for future requirements.
 
 More headers are provided as the microcontroller has many available unused pins that can be assigned as an input or output, this means the designed PCB (Printed Circuit Board)
 can be used for many other controlling purpose of future projects, in this case only one input and one output are utilised.
@@ -62,12 +62,13 @@ with additional programming variable speed of movement could easily be introduce
 
 A housing for the PCB and servo was designed and printed using a FormLabs Form 2 SLA (Stereolithografie) 3D printer.
 The design allows the gate to be simply placed anywhere on the track of our behavour setup, using Google Sketchup this drawing can be easily modified to fit personal requirements and other mounting options.
-![gate parts](graphics/gateparts.png)
+
+![gate parts](graphics/gateparts.png)<br/>
 Printed parts of the maze gate
 
 The above drawing shows the designed parts to be 3D printed and then assembled, as can be seen an arm has been created to attach the door to the servo,
 the door is made from cardboard as this is light and does not apply much load to the servo motor whilst also being cheap and disposable to aid cleaning of the setup,
 the doors shape is bespoke to the track it will be mounted upon and can be modified to fit any further application.
 
-![mounted gate](graphics/gatemounted.png)
+![mounted gate](graphics/gatemounted.png)<br/>
 Gate mounted to track

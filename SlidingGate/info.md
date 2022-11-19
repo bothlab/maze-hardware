@@ -1,6 +1,6 @@
-# **Adjustable Aperture Gate**
+# Adjustable Aperture Gate
 
-## **Description**
+## Description
 
 The Adjustable Aperture Gate is designed to produce multiple programmable apertures between two sliding doors for use in rodent behaviour experiments.
 The various apertures can be pre programmed using the programming module, the programming module can then be used to test the operations using the DIP switches on it's front panel,
@@ -18,9 +18,9 @@ The Programming Module only needs to be connected to change the preset aperture 
 Unit can then run without the programming module.
 Therefore only one Programming Module is necessary to operate multiple Gate Units.
 
-## **Programming Module**
+## Programming Module
 
-## **Parts List 1**
+## Parts List 1
 
 |Part | Qty |Part Description  | Manufacturer | Part ID | Order URL |
 | ---- | --- | ----------------- | ------------ | ------- | --------- |
@@ -49,9 +49,9 @@ All components are mounted in a plastic housing and necessary holes for the the 
 
 <img src="graphics/caseopen3.JPG" alt="case open3" height="500"/><br/>**Programming Module - Button Mounting**
 
-## **Gate Unit**
+## Gate Unit
 
-## **Parts List 2**
+## Parts List 2
 
 |Part | Qty |Part Description  | Manufacturer | Part ID | Order URL |
 | ---- | --- | ----------------- | ------------ | ------- | --------- |
@@ -87,22 +87,24 @@ All components are mounted in a plastic housing and necessary holes for the the 
 | Cable | 1 | D-Sub15 Cable M-F 1M  | Pheonix Contact | 673800 | [Conrad](https://www.conrad.de/de/p/phoenix-contact-seriell-parallel-anschlusskabel-1x-d-sub-buchse-15pol-1x-d-sub-stecker-15pol-1-00-m-weiss-673800.html) |
 | Wire | 1 | Jumper Wire 1x0.2mm  | Tru Components | 1567899 | [Conrad](https://www.conrad.de/de/p/tru-components-1567899-schaltdraht-yv-1-x-0-20-mm-schwarz-100-m-1567899.html) |
 
-## **1. PCB Assembly**
+## 1. PCB Assembly
 
 PCB Gerber files are supplied allowing production and ordering, the origional Proteus design file is also supplied incase any modifications for specific requirements are necessary.
 All components of the PCB are mounted by hand and special attention should be applied to the motor driver (U3) as the underside of the component is used as a heat sink and must be soldered to the PCB,
 this is done from the reverse side of the PCB using the through holes integrated on the PCB design. Soldering SMD devices by hand requires some experience.
 
-<img src="graphics/schematic.jpg" alt="schematic" height="500"/><br/>**Main PCB Schematic**
+<img src="graphics/schematic.jpg" alt="schematic" height="500"/><br/>
+**Main PCB Schematic**
 
-<img src="graphics/pcb.png" alt="pcb" height="400"/><br/>**Main PCB Layout**
+<img src="graphics/pcb.png" alt="pcb" height="400"/><br/>
+**Main PCB Layout**
 
-## **2. Programming**
+## 2. Programming
 
 The Microprocessor must be programmed with the included program, this is performed using a Microchip Pickit 3 In-Circuit Debugger/Programmer and the Microchip MPLAB IDE X software.
 once the included project is added to the programming software the PicKit programmer can be plugged directly into the J1 on the main PCB and the program uploaded to the microprocessor.
 
-## **3. Parts Preparation**
+## 3. Parts Preparation
 
 The output shaft of the motor **(22)** requires modification, this is best performed on a lathe, The motor should be carefully dismantled and the rotor removed.
 
@@ -129,9 +131,10 @@ Once all parts are 3D printed a small amount of cleaning/trimming and sanding is
 
 The four motor mount holes on the Main Body **(12)** should be counter sunk to allow for flush mounting of the motor allowing the slider **(10)** to travel up against the Main Body **(12)** without obstruction.
 
-<img src="graphics/completeassembly.jpg" alt="schematic" height="500"/><br/>**Complete Assembly**
+<img src="graphics/completeassembly.jpg" alt="schematic" height="500"/><br/>
+**Complete Assembly**
 
-## **Key To Drawing**
+## Key To Drawing
 
 1. M4x10mm Screw x4
 2. M4 Washer x4
@@ -156,7 +159,7 @@ The four motor mount holes on the Main Body **(12)** should be counter sunk to a
 21. Right Slider Stop
 22. Motor
 
-## **4. Assembly of parts**
+## 4. Assembly of parts
 
 1. The Motor **(22)** is inserted into the Main Body **(12)** and fixed in place with the wires facing upwards using four M3x10 counter sunk screws.
 
@@ -217,27 +220,32 @@ the wires should exit inside the Main Body at the bottom of the PCB and shortene
 this can then be plugged into the power connector **(J6)** on the PCB.
 The PCB **(15)** is a tight fit inside the Main Body **(12)** and does not require and additional fixing.
 
-<img src="graphics/aperturegate-d15.jpg" alt="schematic" height="400"/><br/>**Connections to PCB**
+<img src="graphics/aperturegate-d15.jpg" alt="schematic" height="400"/><br/>
+**Connections to PCB**
 
-<img src="graphics/mainpcb1.jpg" alt="schematic" height="400"/><br/>**Connections to PCB**
+<img src="graphics/mainpcb1.jpg" alt="schematic" height="400"/><br/>
+**Connections to PCB**
 
 The gates themselves should be made to fit individual requirements, the gate holders on the sliders have been designed to accept 1mm aluminium sheet and fixed in placed using M3x25 screws and nuts.
 
-## **5. Menus**
+## 5. Menus
 
  Once the power supply and programming module are connected the LCD will illuminate and the program will initiate. A simple menu structure for the operation is shown below.
 
-<img src="graphics/running.jpg" alt="running" height="100"/><br/>**The first menu shows that the unit is running and waiting for an input change,
+<img src="graphics/running.jpg" alt="running" height="100"/><br/>
+**The first menu shows that the unit is running and waiting for an input change.**
 Pressing SETUP will enter the function to adjust the presets of the different positions starting with position 0.**
 
-<img src="graphics/pos0.jpg" alt="running" height="100"/><br/>**Pressing NEXT will change the selection to position 1 and then 2 up to position 7.**
+<img src="graphics/pos0.jpg" alt="running" height="100"/><br/>
+**Pressing NEXT will change the selection to position 1 and then 2 up to position 7.**
 
-<img src="graphics/pos1.jpg" alt="running" height="100"/><br/>**Pressing SEL on the selected position to be changed will enter the function to set the value for that preset.**
+<img src="graphics/pos1.jpg" alt="running" height="100"/><br/>
+**Pressing SEL on the selected position to be changed will enter the function to set the value for that preset.**
 
-<img src="graphics/posset.jpg" alt="running" height="100"/><br/>**Pressing + or - on the selected position will change the numerical value in millimeters for that position,
-pressing SEL to confirm will save this value to memory.**
+<img src="graphics/posset.jpg" alt="running" height="100"/><br/>
+**Pressing + or - on the selected position will change the numerical value in millimeters for that position, pressing SEL to confirm will save this value to memory.**
 
-## **6. Operation**
+## 6. Operation
 
 Once the required presets have been entered using the Programming Module the positions can be checked using the DIP switches on the programming module.
 The Gate Unit can be de-powered and the Programming Module removed, all parameters will be saved to Non-Volatile Memory.
@@ -262,13 +270,15 @@ The three bit binary logic inputs are as follows:
 | 110 | Position 6 | User Definable 0-55mm |
 | 111 | Position 7 | Home/Closed |
 
-<img src="graphics/apature gates contol.jpg" alt="schematic" height="400"/><br/>**Control Pin Out for External Controller**
+<img src="graphics/apature gates contol.jpg" alt="schematic" height="400"/><br/>
+**Control Pin Out for External Controller**
 
 Once the power is re-applied the gates will follow the given logic inputs.
 
-## **Mounts**
+## Mounts
 
 The Main Body **(12)** has been design for mounting on a 30x15mm rectangular steel tube present in our personal setup, the clamp **(13)** is screwed down tightly to achieve a tight fit,
 the drawing can be modified before printing to allow for any other types of mounting requirements, orientation or position.
 
-<img src="graphics/install1.jpg" alt="schematic" height="400"/><br/>**Installed aperture gate**
+<img src="graphics/install1.jpg" alt="schematic" height="400"/><br/>
+**Installed aperture gate**

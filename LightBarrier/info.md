@@ -1,6 +1,6 @@
-# **Light Barrier**
+# Light Barrier
 
-## **1. Description**
+## 1. Description
 
 The light barrier is designed to detect any interruption in the light path between the LED (light emmiting diode) emitter and the Photo transistor and convert this interruption into a TTL-compatible
 logic level (Transistor-Transistor-Logic ) output for the duration of the interruption.
@@ -9,7 +9,7 @@ The light barrier has many applications for the detection of movement of many di
 The TTL output can  be used to control other logical operations either in discreet electronics or using microprocessors and single board computers such as the Raspberry Pie or  Arduino as an example.
 Most modern processors run on 3.3V but are tolerant of TTL levels which are 5V. If the higher 5V can not be tolerated then a level shifter should be added to the schematic.
 
-## **2. Parts List**
+## 2. Parts List
 
 |Part | Part Description  | Manufacturer | Part ID | Order URL |
 | ---- | ----------------- | ------------ | ------- | --------- |
@@ -22,10 +22,10 @@ Most modern processors run on 3.3V but are tolerant of TTL levels which are 5V. 
 | R3 | Carbon Film Axial Resistor 470 Ohm 0.25W | Yageo | 1417694-62 | [Conrad](https://www.conrad.de/de/p/yageo-cfr-25jt-52-470r-kohleschicht-widerstand-470-axial-bedrahtet-0207-0-25-w-5-1-st-1417694.html) |
 | PCB | Strip Board Paper/Copper 2.54mm | Rademacher | 529531-62 | [Conrad](https://www.conrad.de/de/p/rademacher-wr-typ-710-2-platine-hartpapier-l-x-b-100-mm-x-75-mm-35-m-rastermass-2-54-mm-inhalt-1-st-529531.html) |
 
-![Light Barrier Schematic](graphics/lightbarrier-schematic.png)
+![Light Barrier Schematic](graphics/lightbarrier-schematic.png)<br/>
 **Schematic of single channel Light Barrier**
 
-## **3. Functionality**
+## 3. Functionality
 
 The 74LS14 is a high-speed CMOS(complimentory metal oxide silicon) Hex Schmitt-Trigger-Invertor, Hex meaning the IC contains six separate Inverting gates all using Schmitt-Trigger technology.
 As the IC(integrated circuit) gates invert the signal two have been placed in series to provide a logic high (1) output when the light beam is interrupted and a logic low (0) when uninterrupted.
@@ -43,10 +43,10 @@ Because of the simplicity of the circuit it is suggested that it is built on pro
 
 The 5V supply is not included in the design as this can be obtained from various sources such as a spare USB output or simply an "off the shelf" power supply readily available from many electronic suppliers.
 
-## **4. Mounting**
+## 4. Mounting
 
 For our use a mounting bracket was developed to be able to place  the light barrier at any position on our behaviour setup track,
 the 5mm LEDs are simply placed within the holes either side of the bracket creating a beam across the track, the CAD drawing is included and can be modified for individual requirements.
 
-![Light Barrier mounting](graphics/lightbarrier.png)
+![Light Barrier mounting](graphics/lightbarrier.png)<br/>
 **LED Mounting bracket and a section of our setup to demonstrate mounting.**
